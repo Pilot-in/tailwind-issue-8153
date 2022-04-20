@@ -13,3 +13,6 @@ or even `npx tailwindcss -i tailwind.css -o tailwind.min.css --postcss` _(to use
 it will lacks `content` classes in the `safelist.txt` file & even  
 ignore `safelist` classes added directly in `tailwind.config.js`  
 _(for example: `flex` class is not generated)_
+
+5. If you remove `postcss-import` from the `postcss.config.js`, Tailwind will generate the correct file  
+_(i don't know why `postcss-import` breaks `content` & `safelist` tho)_
